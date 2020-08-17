@@ -1,0 +1,6 @@
+#開発に関係ないファイル
+.DS_Store
+.vscode
+
+#機密情報
+password.txt
