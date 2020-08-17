@@ -122,11 +122,13 @@ max-width: 28.75rem;
 }
 /* Header */
 .l-header{
-  position: absolute;
-  top: 3.75rem;
-  z-index: 1;
-  color: #fff;
-}
+     position: absolute;
+    top: 3.75rem;
+    left: 0;
+    right: 0px;
+    z-index: 1;
+    color: #fff;
+  }
 /* Nav */
 .l-nav{
   width: 1280px;
@@ -142,7 +144,6 @@ height: 80px;
 }
 .nav-first ul{
     display: inline-block;
-    width: 850px;
     text-align: center;
     position: absolute;
     left: 200px;
@@ -178,12 +179,47 @@ height: 80px;
   transition: width 0.2s ease-out;
 }
 .nav-second{
-  max-width: 850px;
+  max-width: 58.88%;
   margin: 0 auto;
   background-color: #fff;
   border-radius: 32px;
   color: #222222;
 }
+.nav-second dl{
+  display: inline-block;
+  padding: 14px 70px 14px 20px ;
+}
+.nav-second dt{
+  font-size:.75rem ;
+  font-weight: 800;
+}
+.nav-second dd{
+  font-size: .875rem;
+  color: #717171;
+}
+
+.nav-second li:nth-child(2):before,
+.nav-second li:nth-child(3):before,
+.nav-second li:nth-child(4):before{
+  content: '';
+  border-left:solid 1px ;
+  color: #cecece;
+  padding-top: 10px;
+}
+
+.nav-second-search{
+    background-color: #ff385c;
+    border-radius: 100%;
+    text-align: center;
+    display: inline-block;
+    padding: 9px 16px 15px;
+}
+.nav-second-search-wrap{
+  width: 57px;
+  padding-top: 9px;
+}
+
+
 /* Hero */
 .hero img{
   position: relative;
@@ -191,11 +227,12 @@ height: 80px;
 }
 .hero-text{
   position: absolute;
-  top:10%;
- left:5.56%;
- right: 0;
-color: #ffffff;
-z-index: 1;
+  top:13%;
+  left:5.56%;
+  right: 0;
+  color: #ffffff;
+  z-index: 1;
+  font-weight: 800;
 }
 .hero-text h1{
   font-size: 2.5rem;
@@ -246,9 +283,7 @@ z-index: 1;
   background: rgb(113, 113, 113);
 }
 /* Flex */
-/* .flex-wrapper{
-  display: flex;
-} */
+
 .flex{
   display: flex;
   justify-content: space-between;
