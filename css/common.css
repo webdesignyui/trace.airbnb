@@ -71,7 +71,9 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
+body:focus{
+  outline: 0;
+}
 
 img {
   max-width: 100%;
@@ -187,29 +189,63 @@ height: 80px;
   background-color: #fff;
   border-radius: 32px;
   color: #222222;
+  height: 64px;
 }
+.nav-second ul{
+  width: 848px;
+}
+
 .nav-second dl{
   display: inline-block;
-  padding: 14px 70px 14px 20px ;
+  height: 64px;
+  padding: 14px 75px 14px 20px;
 }
+.textarea-wrapper{
+  padding-left: 0px;
+  margin-left: 40px;
+  margin-top: -9px;
+}
+.textarea-wrapper p,
 .nav-second dt{
   font-size:.75rem ;
   font-weight: 800;
 }
+.textarea-wrapper textarea,
 .nav-second dd{
   font-size: .875rem;
   color: #717171;
 }
-
+.textarea-wrapper textarea{
+  border: none;
+  resize: none;
+  width: 200px;
+  height: 64px;
+  background-color: transparent;
+  outline: 0;
+  margin-top: -29px;
+  padding-top: 30px;
+  font-size: 14px;
+  color: #717171;
+}
+.textarea-wrapper textarea:hover{
+  cursor: pointer;
+  background-color: inherit;
+  outline: 0;
+}
 .nav-second li:nth-child(2):before,
 .nav-second li:nth-child(3):before,
-.nav-second li:nth-child(4):before{
+.nav-second li:nth-child(3)::after{
   content: '';
   border-left:solid 1px ;
   color: #cecece;
   padding-top: 10px;
 }
 
+.nav-second-contents:hover{
+  background-color: #e8e8e8;
+  border-radius: 32px;
+  cursor: pointer;
+}
 .nav-second-search{
     background-color: #ff385c;
     border-radius: 100%;
@@ -235,7 +271,7 @@ height: 80px;
 .hero-text{
   position: absolute;
   width: 300px;
-  top: -380px;
+  top: -458px;
   left: 0;
   right: 0;
   color: #ffffff;
@@ -249,8 +285,10 @@ height: 80px;
 }
 .hero-text p{
   margin-bottom: 1rem;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
 }
 /* @media screen and (min-width: 1024px) */
 
@@ -265,7 +303,7 @@ height: 80px;
   font-size: .875rem ;
   font-weight: 600 ;
   border-radius: 8px ;
-  padding: .57rem 1.14rem;
+  padding: 8px 16px;
   -webkit-transition: box-shadow 0.2s ease, -webkit-transform 0.1s ease, transform 0.1s ease ;
   -moz-transition: box-shadow 0.2s ease, transform 0.1s ease ;
   transition: box-shadow 0.2s ease, -ms-transform 0.1s ease, -webkit-transform 0.1s ease, transform 0.1s ease ;
@@ -571,4 +609,8 @@ width: 150px;
 }
 ._w2q1b8{
   margin-right: 8px;
+}
+._w2q1b8:hover{
+  background-color: rgb(232, 232, 232,0.3);
+  border-radius: 32px;
 }
