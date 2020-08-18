@@ -131,7 +131,8 @@ max-width: 28.75rem;
   }
 /* Nav */
 .l-nav{
-  width: 1280px;
+  width: 88.88%;
+  max-width: 1600px;
   margin: 0 auto;
 }
 .l-nav p{
@@ -152,13 +153,14 @@ height: 80px;
 }
 .nav-first li{
   display: inline-block;
-  padding: 1.5625rem 1rem;
+  padding: 26px 15px;;
 }
 .nav-first p{
   display: inline-block;
 }
 .nav-first-item a{
   display: inline-block;
+  font-weight: 400;
 }
 .nav-first-item a:hover{
   opacity: 1;
@@ -179,7 +181,7 @@ height: 80px;
   transition: width 0.2s ease-out;
 }
 .nav-second{
-  max-width: 58.88%;
+  width: 848px;
   margin: 0 auto;
   background-color: #fff;
   border-radius: 32px;
@@ -233,6 +235,7 @@ height: 80px;
   color: #ffffff;
   z-index: 1;
   font-weight: 800;
+  line-height: 40px;
 }
 .hero-text h1{
   font-size: 2.5rem;
@@ -541,4 +544,7 @@ height: 80px;
     position: relative ;
     width: 30px ;
     z-index: 1 ;
+}
+._w2q1b8{
+  margin-right: 8px;
 }
