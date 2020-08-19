@@ -1,7 +1,7 @@
 $(function () {
 
 
-  // box1
+  // box
   // --------------------------------------
 
   $('.js-toggleButton').click(function () {
@@ -11,6 +11,28 @@ $(function () {
   $('.js-toggleButton2').click(function () {
     $('.box2').fadeToggle(100);
   });
+
+  $('.js-toggleButton3').click(function () {
+    $('.box3').fadeToggle(100);
+  });
+
+  $('.js-toggleButton4').click(function () {
+    $('.box4').fadeToggle(100);
+  });
+
+  // box領域以外で閉じる
+  // --------------------------------------
+  // $(document).on('click', function (e) {
+  //   if (!$(e.target).closest('.js-toggleButton').length) {
+  //     // ターゲット要素の外側をクリックした時の操作
+  //     $('.box1').remove();
+  //   } else {
+  //     // ターゲット要素をクリックした時の操作
+
+  //     $('.box1').fadeToggle(100);
+
+  //   }
+  // });
 
 
   // header
@@ -37,7 +59,6 @@ $(function () {
     //任意のタイミングでイベントを発生させる
     $window.trigger('scroll');
   });
-
 
 
 });
